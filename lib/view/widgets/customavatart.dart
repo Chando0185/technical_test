@@ -18,8 +18,8 @@ class CustomAvatar extends StatelessWidget {
             padding: EdgeInsets.all(1),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: isSelected ? Colors.red : Colors.white,
-              border: Border.all(width: 1, color: Colors.red),
+              color: isSelected ? Color.fromRGBO(240, 90, 119, 8) : Colors.white,
+              border: Border.all(width: 1, color: Color.fromRGBO(240, 90, 119, 8)),
             ),
             child: Padding(
               padding: const EdgeInsets.all(10.0),

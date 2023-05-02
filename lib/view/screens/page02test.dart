@@ -41,7 +41,7 @@ class Page02Test extends StatelessWidget {
         builder: (BuildContext context) {
           return AlertDialog(
             // <-- SEE HERE
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Color.fromRGBO(240, 90, 119, 2),
             content: SingleChildScrollView(
               child: ListBody(
                 children: const <Widget>[
@@ -211,7 +211,7 @@ class Page02Test extends StatelessWidget {
                   ),
               arguments: tempArray);
         },
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Color.fromRGBO(240, 90, 119, 8),
         label: Row(
           children: [
             Padding(

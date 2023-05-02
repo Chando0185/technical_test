@@ -21,6 +21,7 @@ class _Page01State extends State<Page01> {
     double height = MediaQuery.of(context).size.height;
     print(width);
     print(height);
+
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
@@ -55,7 +56,7 @@ class _Page01State extends State<Page01> {
                     child: CustomContainer(
                       imageData: "assets/Icon.png",
                       title: "Cycle",
-                      colordata: Colors.red,
+                      colordata: Color.fromRGBO(240, 90, 119, 8),
                     ),
                   ),
                   CustomContainer(
@@ -98,13 +99,17 @@ class _Page01State extends State<Page01> {
                           borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(width / 82.545),
                               bottomRight: Radius.circular(width / 82.545))),
-                      height: height / 2,
+                      height: height / 2.3,
                       width: double.infinity,
                       child: Column(
                         children: [
+                          SizedBox(
+                            height: height / 27.515,
+                          ),
                           CircularPercentIndicator(
                             radius: 130,
                             lineWidth: 25,
+                            progressColor: Color.fromRGBO(240, 90, 119, 8),
                             percent: 0.3,
                             backgroundColor: Colors.grey.shade100,
                             circularStrokeCap: CircularStrokeCap.round,
@@ -115,7 +120,11 @@ class _Page01State extends State<Page01> {
                                   "Title",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: width / 55.03),
+                                      fontSize: 35),
+                                ),
+                                Text(
+                                  "1st Day",
+                                  style: TextStyle(fontSize: 25),
                                 ),
                               ],
                             ),
@@ -126,12 +135,14 @@ class _Page01State extends State<Page01> {
                           Container(
                               width: width / 2,
                               decoration: BoxDecoration(
-                                color: Colors.redAccent,
+                                color: Color.fromRGBO(235, 184, 194, 0.957),
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Text(
-                                "Drink Herbal Tea For Cramps",
-                                style: TextStyle(fontSize: 12),
+                              child: Center(
+                                child: Text(
+                                  "Drink Herbal Tea For Cramps",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ))
                         ],
                       ),
@@ -224,7 +235,7 @@ class _Page01State extends State<Page01> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   PremiumBtn(
-                    colors: Colors.redAccent,
+                    colors: Color.fromRGBO(240, 90, 119, 8),
                     data: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -279,7 +290,7 @@ class _Page01State extends State<Page01> {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.red,
+                color: Color.fromRGBO(240, 90, 119, 8),
                 borderRadius: BorderRadius.only(topRight: Radius.circular(10))),
             height: height / 13.7575,
             width: MediaQuery.of(context).size.width / 4,
