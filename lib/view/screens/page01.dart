@@ -85,7 +85,7 @@ class _Page01State extends State<Page01> {
                       child: DatePicker(
                         DateTime.now(),
                         initialSelectedDate: DateTime.now(),
-                        selectionColor: Colors.black,
+                        selectionColor: Color.fromRGBO(240, 90, 119, 8),
                         selectedTextColor: Colors.white,
                         onDateChange: (date) {
                           // New date selected
@@ -124,7 +124,9 @@ class _Page01State extends State<Page01> {
                                 ),
                                 Text(
                                   "1st Day",
-                                  style: TextStyle(fontSize: 25),
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(240, 90, 119, 8),
+                                      fontSize: 25),
                                 ),
                               ],
                             ),
@@ -141,7 +143,10 @@ class _Page01State extends State<Page01> {
                               child: Center(
                                 child: Text(
                                   "Drink Herbal Tea For Cramps",
-                                  style: TextStyle(fontSize: 12),
+                                  style: TextStyle(
+                                      color: Color.fromRGBO(240, 90, 119, 8),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
                                 ),
                               ))
                         ],
@@ -179,7 +184,10 @@ class _Page01State extends State<Page01> {
               SizedBox(
                 height: height / 27.515,
               ),
-              Text("Explore"),
+              Text(
+                "Explore",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
               SizedBox(
                 height: height / 27.515,
               ),
@@ -189,19 +197,27 @@ class _Page01State extends State<Page01> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    ExploreBtn(),
+                    ExploreBtn(
+                      categories: "Category 1",
+                    ),
                     SizedBox(
                       width: width / 82.545,
                     ),
-                    ExploreBtn(),
+                    ExploreBtn(
+                      categories: "Category 2",
+                    ),
                     SizedBox(
                       width: width / 82.545,
                     ),
-                    ExploreBtn(),
+                    ExploreBtn(
+                      categories: "Category 3",
+                    ),
                     SizedBox(
                       width: width / 82.545,
                     ),
-                    ExploreBtn()
+                    ExploreBtn(
+                      categories: "Category 4",
+                    )
                   ],
                 ),
               ),
@@ -225,7 +241,10 @@ class _Page01State extends State<Page01> {
               ),
               Text(
                 "Unlock Premium",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                style: TextStyle(
+                    color: Color.fromRGBO(240, 90, 119, 8),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18),
               ),
               SizedBox(
                 height: height / 27.515,

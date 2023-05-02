@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ExploreBtn extends StatelessWidget {
-  const ExploreBtn({super.key});
+  var categories;
+  ExploreBtn({super.key, this.categories});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,13 @@ class ExploreBtn extends StatelessWidget {
                 ),
               ),
             ),
-            Text("Explore")
+            SizedBox(
+              height: height / 82.45,
+            ),
+            Text(
+              categories,
+              style: TextStyle(fontSize: 10),
+            )
           ],
         ),
       ),
