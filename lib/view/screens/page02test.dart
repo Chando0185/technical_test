@@ -41,13 +41,14 @@ class Page02Test extends StatelessWidget {
         builder: (BuildContext context) {
           return AlertDialog(
             // <-- SEE HERE
-            backgroundColor: Color.fromRGBO(240, 90, 119, 2),
+            backgroundColor: Color.fromRGBO(244, 143, 163, 0.996),
             content: SingleChildScrollView(
               child: ListBody(
                 children: const <Widget>[
                   Text(
                     'ARE YOU SURE WANT TO SELECT THIS?',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
@@ -91,12 +92,12 @@ class Page02Test extends StatelessWidget {
           child: Container(
             width: width / 11.221,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(4.0),
+              borderRadius: BorderRadius.circular(2.0),
               color: Colors.white.withOpacity(0.5),
             ),
             child: Center(
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Image.asset("assets/Polygon 9.png"),
               ),
             ),
